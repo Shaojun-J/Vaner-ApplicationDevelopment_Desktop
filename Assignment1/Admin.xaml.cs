@@ -23,5 +23,10 @@ namespace Assignment1
         {
             InitializeComponent();
         }
+
+        private void update_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
