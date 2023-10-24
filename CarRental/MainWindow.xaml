@@ -7,11 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
-    <Grid Margin="0,0,0,0" Background="#FFf0f2f5">
+    <Grid Margin="0,0,0,0">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="33"/>
+            <ColumnDefinition Width="510*"/>
+            <ColumnDefinition Width="223*"/>
+            <ColumnDefinition Width="34"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -19,15 +23,14 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-        <GroupBox Grid.Row="1" Grid.Column="1"  Background="White" Width="350">
-            <StackPanel>
-                <Label Content="Car Rental System"   FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Height="42" Width="212" />
+        <GroupBox Grid.Row="1" Grid.Column="1"  Background="White" Margin="36,40,143,19" Grid.RowSpan="2">
+            <StackPanel Margin="-7,0,7,0" Height="275">
 
                 <StackPanel Grid.Row="2" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <RadioButton x:Name="customer" GroupName="g1" Grid.Column="3" Content="Customer" HorizontalAlignment="Left"   VerticalAlignment="Center" IsChecked="True" Checked="customer_Checked"/>
-                    <RadioButton x:Name="staff" GroupName="g1" Grid.Column="3" Content="Staff" HorizontalAlignment="Left"   VerticalAlignment="Center" Margin="10,0,0,0" Checked="staff_Checked"/>
+                    <RadioButton x:Name="customer" GroupName="g1" Grid.Column="3" Content="Customer"   VerticalAlignment="Center" IsChecked="True" Checked="customer_Checked"/>
+                    <RadioButton x:Name="staff" GroupName="g1" Grid.Column="3" Content="Staff"   VerticalAlignment="Center" Margin="10,0,0,0" Checked="staff_Checked"/>
                 </StackPanel>
-                
+
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal"  Margin="0,10,30,10" FlowDirection="LeftToRight">
                     <Label Content="User Name" HorizontalAlignment="Right" Height="Auto" Width="Auto" VerticalAlignment="Center" FontSize="14" />
                     <TextBox x:Name="userName" 
@@ -39,11 +42,11 @@
                     </TextBox>
                 </StackPanel>
 
-                
+
 
 
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Margin="0,10,30,10" FlowDirection="LeftToRight">
-                     <Label Content="Password" HorizontalAlignment="Right"  VerticalAlignment="Center"  Height="29" Width="68" FontSize="14" />
+                    <Label Content="Password" HorizontalAlignment="Right"  VerticalAlignment="Center"  Height="29" Width="68" FontSize="14" />
                     <PasswordBox x:Name="password"
                                 HorizontalAlignment="Right"  
                                 VerticalAlignment="Center" 
@@ -110,6 +113,8 @@
 
             </StackPanel>
         </GroupBox>
+        <Label Content="Car Rental System"   FontSize="24" FontWeight="Bold" Grid.Column="1" Margin="249,0,17,8" />
+        <Image Grid.ColumnSpan="3" Margin="367,40,10,2" Source="/Image6.png" Stretch="Fill" Grid.Column="1" Grid.Row="2"/>
 
 
 
