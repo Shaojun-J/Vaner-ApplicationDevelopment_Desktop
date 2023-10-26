@@ -35,7 +35,7 @@ namespace CarRental
             string port = "port=5432;";
             string dbName = "database=vanierdb;";
             string userName = "username=postgres;";
-            string password = "password=shaojun123;";
+            string password = "password=328111;";
             //string connectionString = string.Format("{0}{1}{2}{3}{4}", host, port, dbName, userName, password);
             string connectionString = $"{host} {port} {dbName} {userName} {password}";
             return connectionString;
@@ -96,9 +96,8 @@ namespace CarRental
                         if (pwdHash.Equals(pwdInput))
                         {
                             MessageBox.Show("Login sucessfull");
-                            Select newWind = new Select();
-                            newWind.Show();
-                            this.Close();
+                            CarSelection carSelection = new CarSelection();
+                            carSelection.Show();
                         }
                         else
                         {
@@ -132,9 +131,10 @@ namespace CarRental
 
         private void staff_Checked(object sender, RoutedEventArgs e)
         {
-            if (staff.IsChecked == true)
+            if (admin.IsChecked == true)
             {
-                //btn_creat.Visibility = Visibility.Collapsed;
+                Admin admin = new Admin();
+                admin.Show();
             }
             else
             {

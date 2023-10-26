@@ -36,7 +36,7 @@ namespace CarRental
             string port = "port=5432;";
             string dbName = "database=vanierdb;";
             string userName = "username=postgres;";
-            string password = "password=shaojun123;";
+            string password = "password=328111;";
             //string connectionString = string.Format("{0}{1}{2}{3}{4}", host, port, dbName, userName, password);
             string connectionString = $"{host} {port} {dbName} {userName} {password}";
             return connectionString;
@@ -230,7 +230,7 @@ namespace CarRental
 
             if (checkInfor())
             {
-                MessageBox.Show("Please enter corect infor. The RED information is incorrect!");
+                MessageBox.Show("Please enter correct info. The RED information is incorrect!");
                 return;
             }
 
