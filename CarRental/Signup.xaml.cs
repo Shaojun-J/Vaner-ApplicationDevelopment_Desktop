@@ -148,7 +148,7 @@ namespace CarRental
 
             //regex = new Regex(@"^(\d){4}-(\d){2}-((\d){2})$");
             bResult = DateTime.TryParse(tb_expiredate.Text, out DateTime expireDateTime);
-            if (tb_expiredate.Text.Length != 10 || !regex.IsMatch(tb_expiredate.Text))
+            if (!bResult)
             {
                 lb_expiredate.Foreground = new SolidColorBrush(Colors.Red);
                 bErr = true;
@@ -280,6 +280,10 @@ namespace CarRental
 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Register successfully");
+
+                MainWindow newWin = new MainWindow();
+                newWin.Show();
+                this.Close();
             }
             catch (Exception ex)
             {

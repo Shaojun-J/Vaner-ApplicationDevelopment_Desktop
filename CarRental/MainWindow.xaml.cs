@@ -96,6 +96,9 @@ namespace CarRental
                         if (pwdHash.Equals(pwdInput))
                         {
                             MessageBox.Show("Login sucessfull");
+                            Select newWind = new Select();
+                            newWind.Show();
+                            this.Close();
                         }
                         else
                         {

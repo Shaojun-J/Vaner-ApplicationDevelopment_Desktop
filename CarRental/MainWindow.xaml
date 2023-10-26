@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
+    <Window.Resources>
+        <Style x:Key="Login" TargetType="Button">
+            <Setter Property="Height" Value="Auto" />
+            <Setter Property="Width" Value="275" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="#FF2a75ed" />
+            <Setter Property="Padding" Value="20,10,20,10" />
+            <Setter Property="Margin" Value="0,20,0,0" />
+            <Setter Property="BorderBrush" Value="{x:Null}" />
+            
+        </Style>
+        
+        <Style x:Key="LoginBorder" TargetType="{x:Type Border}">
+            <Setter Property="CornerRadius" Value="5"></Setter>
+        </Style>
+
+    </Window.Resources>
     <Grid Margin="0,0,0,0" Background="#FFf0f2f5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -68,6 +89,7 @@
                     </Button.Resources>
                 </Button>
 
+                <Button Style="{StaticResource Login}" Content="Hello"></Button>
                 <!--<Button Content="Forgot password?" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="7"  Height="Auto" Width="Auto" Foreground="#FF2a75ed"  Background="{x:Null}" Padding="1,10,1,10" BorderBrush="{x:Null}" />-->
 
                 <Button x:Name="btn_creat" Content="Creat new account"  Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" 
