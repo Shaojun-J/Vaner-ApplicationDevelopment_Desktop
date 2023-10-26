@@ -28,7 +28,7 @@
 
                 <StackPanel Grid.Row="2" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center">
                     <RadioButton x:Name="customer" GroupName="g1" Grid.Column="3" Content="Customer"   VerticalAlignment="Center" IsChecked="True" Checked="customer_Checked"/>
-                    <RadioButton x:Name="staff" GroupName="g1" Grid.Column="3" Content="Staff"   VerticalAlignment="Center" Margin="10,0,0,0" Checked="staff_Checked"/>
+                    <RadioButton x:Name="admin" GroupName="g1" Grid.Column="3" Content="Admin"   VerticalAlignment="Center" Margin="10,0,0,0" Checked="staff_Checked"/>
                 </StackPanel>
 
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal"  Margin="0,10,30,10" FlowDirection="LeftToRight">

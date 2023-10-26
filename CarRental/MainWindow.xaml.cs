@@ -131,9 +131,10 @@ namespace CarRental
 
         private void staff_Checked(object sender, RoutedEventArgs e)
         {
-            if (staff.IsChecked == true)
+            if (admin.IsChecked == true)
             {
-                //btn_creat.Visibility = Visibility.Collapsed;
+                Admin admin = new Admin();
+                admin.Show();
             }
             else
             {
