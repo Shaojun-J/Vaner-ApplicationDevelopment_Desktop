@@ -403,4 +403,5 @@ $tf/
 */bin/
 .vs/
 bin/
+obj/
 
