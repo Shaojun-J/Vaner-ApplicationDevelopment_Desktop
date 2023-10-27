@@ -401,4 +401,6 @@ $tf/
 .DS_Store
 */.vs/
 */bin/
+.vs/
+bin/
 
