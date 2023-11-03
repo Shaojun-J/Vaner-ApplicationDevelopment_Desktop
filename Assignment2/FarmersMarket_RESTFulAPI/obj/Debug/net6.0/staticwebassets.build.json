@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "g7+sRIvkdvfP42gzWNWvDWLMt4bsbT0/DOXGuSjF5IQ=",
+  "Source": "FarmersMarket_RESTFulAPI",
+  "BasePath": "_content/FarmersMarket_RESTFulAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

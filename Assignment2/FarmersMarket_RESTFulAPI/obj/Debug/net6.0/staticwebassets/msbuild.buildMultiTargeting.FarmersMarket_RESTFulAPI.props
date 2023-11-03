@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FarmersMarket_RESTFulAPI.props" />
+</Project>
