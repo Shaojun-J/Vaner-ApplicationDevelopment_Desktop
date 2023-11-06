@@ -1,4 +1,4 @@
-# Vaner-ApplicationDevelopment_Desktop
+# Vanier-ApplicationDevelopment_Desktop
 
 ## Project Title 
 ----

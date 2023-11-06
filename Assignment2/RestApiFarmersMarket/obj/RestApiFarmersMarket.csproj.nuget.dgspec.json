@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive\\Vanier\\Block4\\420-942-VA APPLICATION DEVELOPMENT 1 (DESKTOP)\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\RestApiFarmersMarket.csproj": {}
+    "D:\\Shaojun\\codes\\C#\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\RestApiFarmersMarket.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive\\Vanier\\Block4\\420-942-VA APPLICATION DEVELOPMENT 1 (DESKTOP)\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\RestApiFarmersMarket.csproj": {
+    "D:\\Shaojun\\codes\\C#\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\RestApiFarmersMarket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\Vanier\\Block4\\420-942-VA APPLICATION DEVELOPMENT 1 (DESKTOP)\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\RestApiFarmersMarket.csproj",
+        "projectUniqueName": "D:\\Shaojun\\codes\\C#\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\RestApiFarmersMarket.csproj",
         "projectName": "RestApiFarmersMarket",
-        "projectPath": "D:\\OneDrive\\Vanier\\Block4\\420-942-VA APPLICATION DEVELOPMENT 1 (DESKTOP)\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\RestApiFarmersMarket.csproj",
+        "projectPath": "D:\\Shaojun\\codes\\C#\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\RestApiFarmersMarket.csproj",
         "packagesPath": "C:\\Users\\Shaojun\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\Vanier\\Block4\\420-942-VA APPLICATION DEVELOPMENT 1 (DESKTOP)\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\obj\\",
+        "outputPath": "D:\\Shaojun\\codes\\C#\\Vaner-ApplicationDevelopment_Desktop\\Assignment2\\RestApiFarmersMarket\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Shaojun\\AppData\\Roaming\\NuGet\\NuGet.Config",
