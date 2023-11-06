@@ -38,8 +38,7 @@
                              VerticalAlignment="Center" 
                              Width="200" 
                              Padding="2,5,2,5"
-                             Height="Auto" FontSize="14">
-                    </TextBox>
+                             Height="Auto" FontSize="14"/>
                 </StackPanel>
 
 
@@ -94,7 +93,7 @@
                     <Button.Style>
                         <Style TargetType="Button">
                             <Style.Triggers>
-                                <DataTrigger Binding="{Binding ElementName=staff, Path=IsChecked}"
+                                <DataTrigger Binding="{Binding ElementName=admin, Path=IsChecked}"
                                     Value="True">
                                     <Setter Property="Visibility" Value="Hidden"/>
                                 </DataTrigger>

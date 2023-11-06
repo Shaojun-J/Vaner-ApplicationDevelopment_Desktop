@@ -9,7 +9,7 @@
         Title="Signup" Height="450" Width="800">
 
     <Grid Background="#FFf0f2f5">
-        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="0,0,-268,-150">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" >
             <StackPanel>
 
                 <GroupBox Header="Login Infor" Background="White" Width="350" FontSize="18" FontWeight="Bold">
@@ -49,7 +49,7 @@
 
                 <GridSplitter Margin="5" Width="800" Height="2"  BorderThickness="1" BorderBrush="#FFECECF1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
-                <GroupBox Header="Drive License Infor" Background="White" Width="350" FontSize="18" FontWeight="Bold">
+                <!--<GroupBox Header="Drive License Infor" Background="White" Width="350" FontSize="18" FontWeight="Bold">
                     <StackPanel Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Label x:Name="lb_licenseid" Content="License ID" HorizontalAlignment="Left" FontSize="14"  Margin="0,5,0,0"  FontWeight="Normal" />
                         <TextBox x:Name="tb_licenseId" Text=""   Width="200" FontSize="14"  Padding="2,5,2,5"  FontWeight="Normal" />
@@ -68,9 +68,9 @@
                                  />
                     </StackPanel>
                 </GroupBox>
-                <GridSplitter Margin="5" Width="800" Height="2"  BorderThickness="1" BorderBrush="#FFECECF1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <GridSplitter Margin="5" Width="800" Height="2"  BorderThickness="1" BorderBrush="#FFECECF1" HorizontalAlignment="Center" VerticalAlignment="Top"/>-->
 
-                <GroupBox Header="Address Infor" Background="White" Width="350" FontSize="18" FontWeight="Bold">
+                <!--<GroupBox Header="Address Infor" Background="White" Width="350" FontSize="18" FontWeight="Bold">
                     <StackPanel Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Center">
 
                         <Label  x:Name="lb_street" Content="Street " HorizontalAlignment="Left" FontSize="14"  Margin="0,5,0,0"  FontWeight="Normal" />
@@ -85,7 +85,7 @@
                         <Label  x:Name="lb_postalcode" Content="Postal code" HorizontalAlignment="Left" FontSize="14"  Margin="0,5,0,0"  FontWeight="Normal" />
                         <TextBox x:Name="tb_postalcode"  Text=""  Width="200" FontSize="14"  Padding="2,5,2,5"  FontWeight="Normal" />
                     </StackPanel>
-                </GroupBox>
+                </GroupBox>-->
 
                 <Button Content="Sign Up"  Height="Auto" Width="300" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FF4ab73b" BorderBrush="{x:Null}" Foreground="White" HorizontalContentAlignment="Center" Padding="40,10,40,10"  FontWeight="Bold" Click="Button_Click">
                     <Button.Resources>
