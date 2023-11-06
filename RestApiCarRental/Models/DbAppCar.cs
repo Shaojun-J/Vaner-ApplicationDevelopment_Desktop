@@ -16,21 +16,32 @@ namespace RestApiCarRental.Models
             //string query = "insert into car_rental.car values(default, @user_name, @password, @salt, @phone, @email)";
             NpgsqlCommand cmd = new NpgsqlCommand(query, con);
             Console.WriteLine(query);
-            if (cmd.ExecuteNonQuery() > 0)
+            try
             {
-                response.statusCode = 200;
-                response.message = "Insertion Successful";
-                response.obj = car;
-                response.objs = null;
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    response.statusCode = 200;
+                    response.message = "Insertion Successful";
+                    response.obj = car;
+                    response.objs = null;
 
+                }
+                else
+                {
+                    response.statusCode = 100;
+                    response.message = "Insertion failed";
+                    response.obj = null;
+                    response.objs = null;
+                }
             }
-            else
+            catch (Exception ex)
             {
                 response.statusCode = 100;
-                response.message = "Insertion failed";
+                response.message = "Insertion failed: " + ex.ToString();
                 response.obj = null;
                 response.objs = null;
             }
+
             con.Close();
             return response;
         }
@@ -42,18 +53,27 @@ namespace RestApiCarRental.Models
             string query = "delete from car_rental.car where car_id='" + id + "'";
             NpgsqlCommand cmd = new NpgsqlCommand(query, con);
 
-
-            if (cmd.ExecuteNonQuery() > 0)
+            try
             {
-                response.statusCode = 200;
-                response.message = "Delete successfully";
-                response.obj = null;
-                response.objs = null;
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    response.statusCode = 200;
+                    response.message = "Delete successfully";
+                    response.obj = null;
+                    response.objs = null;
+                }
+                else
+                {
+                    response.statusCode = 100;
+                    response.message = "Delete failed";
+                    response.obj = null;
+                    response.objs = null;
+                }
             }
-            else
+            catch (Exception ex)
             {
                 response.statusCode = 100;
-                response.message = "Delete failed";
+                response.message = "Delete failed: " + ex.ToString();
                 response.obj = null;
                 response.objs = null;
             }

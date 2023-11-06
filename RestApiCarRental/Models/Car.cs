@@ -12,6 +12,6 @@
         public string body_type { get; set; }
         public int seats { get; set; }
         public int doors { get; set; }
-        public int category_id { get; set; }
+        //public int category_id { get; set; }
     }
 }

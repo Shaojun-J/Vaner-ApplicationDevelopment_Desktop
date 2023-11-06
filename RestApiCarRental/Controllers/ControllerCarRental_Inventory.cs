@@ -33,7 +33,8 @@ namespace RestApiCarRental.Controllers
             return response;
         }
 
-        [HttpPut]
+        //[HttpPut]
+        [HttpPost]
         [Route("UpdateInventory")]
         public Response UpdateInventory(Inventory inv)
         {
@@ -65,6 +66,18 @@ namespace RestApiCarRental.Controllers
             NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
             DbAppCarRental dba = new DbAppCarRental();
             response = dba.GetInventorybyId(con, inv.inventory_id);
+
+            return response;
+        }
+
+        [HttpPost]
+        [Route("GetInventory")]
+        public Response GetInventory(Inventory inv)
+        {
+            Response response = new Response();
+            NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
+            DbAppCarRental dba = new DbAppCarRental();
+            response = dba.GetInventory(con);
 
             return response;
         }

@@ -29,8 +29,9 @@ namespace RestApiCarRental.Controllers
             return response;
         }
 
-        [HttpPut]
-        [Route("UpdateProduct")]
+        //[HttpPut]
+        [HttpPost]
+        [Route("UpdateCar")]
         public Response UpdateCar(Car car)
         {
             Response response = new Response();
