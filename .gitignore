@@ -405,3 +405,6 @@ $tf/
 bin/
 obj/
 
+Assignment2/RestApiFarmersMarket/obj/Debug/net6.0/RestApiFarmersMarket.GeneratedMSBuildEditorConfig.editorconfig
+Assignment2/RestApiFarmersMarket/obj/RestApiFarmersMarket.csproj.nuget.dgspec.json
+Assignment2/RestApiFarmersMarket/obj/project.assets.json
