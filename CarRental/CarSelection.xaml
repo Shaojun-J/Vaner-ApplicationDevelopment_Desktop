@@ -7,15 +7,16 @@
         mc:Ignorable="d"
         Title="CarSelection" Height="450" Width="800">
 
-    <DockPanel LastChildFill="True">
-        <Grid DockPanel.Dock="Top" Height="Auto" Background="#FFF2E8FB">
+    <DockPanel LastChildFill="True" Background="#FFCDD1D2">
+        <Grid DockPanel.Dock="Top" Height="Auto" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="100"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal">
-                <Button Content="Reservation" Margin="10" Click="Button_Click_2"/>
+                <Button Content="Reservation" Margin="10" Width="110" Height="22" Click="Button_Click_2"/>
+                <Button Content="Logout" Margin="10" Width="110" Height="22" Click="Logout_Click"/>
             </StackPanel>
             
             
@@ -56,7 +57,7 @@
             </ComboBox>
 
             <Button Content="Apply" Click="Button_Click" Margin="0,5,0,5" Background="#FF4ab73b" Foreground="White" BorderBrush="{x:Null}" FontSize="14" Padding="5"/>
-            <DatePicker/>
+            
 
         </StackPanel>
 
@@ -65,7 +66,7 @@
             <Button Content="Reserve" Margin="5" Background="#FF5aa75b" Padding="5" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontWeight="Bold" Click="Button_Click_3"/>
         </StackPanel>
 
-        <StackPanel  >
+        <StackPanel  Margin="10,0,10,0">
             <DataGrid x:Name="dataGrid"  SelectionChanged="DataGrid_SelectionChanged" />
 
         </StackPanel>

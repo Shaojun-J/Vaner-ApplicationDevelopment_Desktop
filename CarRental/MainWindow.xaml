@@ -24,7 +24,7 @@
         </Grid.RowDefinitions>
 
         <GroupBox Grid.Row="1" Grid.Column="1"  Background="White" Margin="36,40,143,19" Grid.RowSpan="2">
-            <StackPanel Margin="-7,0,7,0" Height="275">
+            <StackPanel Margin="-7,0,7,20" Height="Auto">
 
                 <StackPanel Grid.Row="2" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center">
                     <RadioButton x:Name="customer" GroupName="g1" Grid.Column="3" Content="Customer"   VerticalAlignment="Center" IsChecked="True" Checked="customer_Checked"/>
@@ -72,7 +72,7 @@
 
                 <!--<Button Content="Forgot password?" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="7"  Height="Auto" Width="Auto" Foreground="#FF2a75ed"  Background="{x:Null}" Padding="1,10,1,10" BorderBrush="{x:Null}" />-->
 
-                <Button x:Name="btn_creat" Content="Creat new account"  Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" 
+                <Button x:Name="btn_creat" Content="Creat new account" 
                 Height="Auto" Width="275" 
                 FontSize="14" 
                 HorizontalAlignment="Center" 
@@ -81,7 +81,7 @@
                 Foreground="White" 
                 HorizontalContentAlignment="Center" 
                 Padding="20,10,20,10"  
-                Margin="0,20,0,0"
+                Margin="0,20,0,20"
                 FontWeight="Bold" 
                 Click="Button_Click_1">
                     <Button.Resources>

@@ -98,5 +98,12 @@ namespace CarRental
                 }
             }
         }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow win = new MainWindow();
+            win.Show();
+            this.Close();
+        }
     }
 }

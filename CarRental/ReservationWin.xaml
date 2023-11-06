@@ -6,26 +6,26 @@
         xmlns:local="clr-namespace:CarRental"
         mc:Ignorable="d"
         Title="ReservationWin" Height="450" Width="800">
-    <DockPanel LastChildFill="True">
-        <Grid DockPanel.Dock="Top" Height="Auto" Background="#FFF2E8FB">
+    <DockPanel LastChildFill="True" Background="#FFCDD1D2">
+        <Grid DockPanel.Dock="Top" Height="Auto" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="100"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal" Grid.Column="1">
-                <Button Content="CarSelect" Margin="10" Padding="2" Click="Button_Click_1" />
-                <Button Content="Show Reservation" Margin="10" Padding="2" Click="Button_Click"/>
+                <Button Content="Logout" Margin="10" Padding="2" Click="Logout_Click" Width="110" Height="22"/>
+                <Button Content="CarSelect" Margin="10" Padding="2" Click="Button_Click_1" Width="110" Height="22"/>
+                <Button Content="Show Reservation" Margin="10" Padding="2" Click="Button_Click" Width="110" Height="22"/>
             </StackPanel>
         </Grid>
 
-        <StackPanel DockPanel.Dock="Bottom" Height="100"  Margin="10" Background="#FFF1E7E7" >
+        <StackPanel DockPanel.Dock="Bottom" Height="100"  Margin="30,10,30,10" Background="White" >
             <DataGrid x:Name="carDataGrid"  SelectionChanged="DataGrid_SelectionChanged" />
         </StackPanel>
 
-        <StackPanel  Margin="10" Background="#FFF1E7E7" >
+        <StackPanel  Margin="30,10,30,10" Background="White" >
             <DataGrid x:Name="dataGrid"  SelectionChanged="DataGrid_SelectionChanged" />
-
         </StackPanel>
 
 

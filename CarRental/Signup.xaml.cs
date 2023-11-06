@@ -266,5 +266,12 @@ namespace CarRental
                 con?.Close();
             }
         }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow newWin = new MainWindow();
+            newWin.Show();
+            this.Close();
+        }
     }
 }

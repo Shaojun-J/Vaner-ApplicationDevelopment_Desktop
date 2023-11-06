@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CarRental"
         mc:Ignorable="d"
         MinWidth="300"
-        Title="Signup" Height="450" Width="800">
+        Title="Signup" Height="650" Width="900">
 
     <Grid Background="#FFf0f2f5">
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" >
@@ -88,6 +88,14 @@
                 </GroupBox>-->
 
                 <Button Content="Sign Up"  Height="Auto" Width="300" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FF4ab73b" BorderBrush="{x:Null}" Foreground="White" HorizontalContentAlignment="Center" Padding="40,10,40,10"  FontWeight="Bold" Click="Button_Click">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button Content="Login"  Height="Auto" Width="300" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FF2a75ed" BorderBrush="{x:Null}" Foreground="White" HorizontalContentAlignment="Center" Padding="40,10,40,10" Margin="0,20,0,20" FontWeight="Bold" Click="Login_Click">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="5"/>

@@ -133,10 +133,11 @@ namespace CarRental
                 var serverRes = await DBA.client.PostAsJsonAsync("StaffLogin", staff);
                 var content = serverRes.Content.ReadAsStringAsync().Result;
                 Response contentJson = JsonConvert.DeserializeObject<Response>(content.ToString());
-                Staff s = JsonConvert.DeserializeObject<Staff>(contentJson.obj.ToString());
-                Console.WriteLine(s.user_name + " " + s.authority);
-                if (serverRes.IsSuccessStatusCode)
+                if (contentJson?.statusCode == 200)
                 {
+                    Staff s = JsonConvert.DeserializeObject<Staff>(contentJson.obj.ToString());
+                    Console.WriteLine(s.user_name + " " + s.authority);
+
                     Admin admin = new Admin();
                     admin.Show();
                     this.Close();
