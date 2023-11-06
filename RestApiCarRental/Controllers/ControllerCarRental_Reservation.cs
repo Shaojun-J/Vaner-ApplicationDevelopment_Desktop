@@ -59,12 +59,12 @@ namespace RestApiCarRental.Controllers
 
         [HttpPost]
         [Route("GetReservationbyCustomerId")]
-        public Response GetReservationbyCustomerId(int id)
+        public Response GetReservationbyCustomerId(CustomerAuthority customer)
         {
             Response response = new Response();
             NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
             DbAppCarRental dba = new DbAppCarRental();
-            response = dba.GetReservationbyCustomerId(con, id);
+            response = dba.GetReservationbyCustomerId(con, customer.id);
 
             return response;
         }

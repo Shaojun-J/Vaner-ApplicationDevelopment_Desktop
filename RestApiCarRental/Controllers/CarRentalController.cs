@@ -93,52 +93,7 @@ namespace RestApiCarRental.Controllers
 
 
 
-        [HttpPost]
-        [Route("AddCar")]
-        public Response AddCar(Car car)
-        {
-            Response response = new Response();
-            NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
-            DbAppCarRental dba = new DbAppCarRental();
-            response = dba.AddCar(con, car);
-
-            return response;
-        }
-
-        [HttpDelete]
-        [Route("DeleteCarbyId/{id}")]
-        public Response DeleteCarbyId(int id)
-        {
-            Response response = new Response();
-            NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
-            DbAppCarRental dba = new DbAppCarRental();
-            response = dba.DeleteCarbyId(con, id);
-            return response;
-        }
-
-        [HttpPut]
-        [Route("UpdateProduct")]
-        public Response UpdateCar(Car car)
-        {
-            Response response = new Response();
-            NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
-            DbAppCarRental dba = new DbAppCarRental();
-            response = dba.UpdateCar(con, car);
-
-            return response;
-        }
-
-        [HttpPost]
-        [Route("GetCarbyFilter")]
-        public Response GetCarbyFilter(Car car)
-        {
-            Response response = new Response();
-            NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
-            DbAppCarRental dba = new DbAppCarRental();
-            response = dba.GetCarbyFilter(con, car);
-
-            return response;
-        }
+        
 
 
         

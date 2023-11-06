@@ -6,68 +6,63 @@ namespace RestApiCarRental.Controllers
 {
     public partial class CarRentalController 
     {
-        /*************************************************
-         * Inventory
-         */
-
         [HttpPost]
-        [Route("AddInventory")]
-        public Response AddInventory(Inventory inv)
+        [Route("AddCar")]
+        public Response AddCar(Car car)
         {
             Response response = new Response();
             NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
             DbAppCarRental dba = new DbAppCarRental();
-            response = dba.AddInventory(con, inv);
+            response = dba.AddCar(con, car);
 
             return response;
         }
 
         [HttpDelete]
-        [Route("DeleteInventorybyId/{id}")]
-        public Response DeleteInventorybyId(int id)
+        [Route("DeleteCarbyId/{id}")]
+        public Response DeleteCarbyId(int id)
         {
             Response response = new Response();
             NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
             DbAppCarRental dba = new DbAppCarRental();
-            response = dba.DeleteInventorybyId(con, id);
+            response = dba.DeleteCarbyId(con, id);
             return response;
         }
 
         [HttpPut]
-        [Route("UpdateInventory")]
-        public Response UpdateInventory(Inventory inv)
+        [Route("UpdateProduct")]
+        public Response UpdateCar(Car car)
         {
             Response response = new Response();
             NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
             DbAppCarRental dba = new DbAppCarRental();
-            response = dba.UpdateInventory(con, inv);
+            response = dba.UpdateCar(con, car);
 
             return response;
         }
 
         [HttpPost]
-        [Route("GetInventorybyCarId")]
-        public Response GetInventorybyCarId(Inventory inv)
+        [Route("GetCarbyFilter")]
+        public Response GetCarbyFilter(Car car)
         {
             Response response = new Response();
             NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
             DbAppCarRental dba = new DbAppCarRental();
-            response = dba.GetInventorybyCarId(con, inv.car_id);
+            response = dba.GetCarbyFilter(con, car);
 
             return response;
         }
 
         [HttpPost]
-        [Route("GetInventorybyId")]
-        public Response GetInventorybyId(Inventory inv)
+        [Route("GetCarbyId")]
+        public Response GetCarbyId(Car car)
         {
             Response response = new Response();
             NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("CustomerAuthorityConnection"));
             DbAppCarRental dba = new DbAppCarRental();
-            response = dba.GetInventorybyId(con, inv.inventory_id);
+            response = dba.GetCarbyId(con, car.car_id);
 
             return response;
         }
-
     }
 }
