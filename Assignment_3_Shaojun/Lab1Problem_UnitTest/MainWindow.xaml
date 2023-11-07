@@ -1,0 +1,17 @@
+﻿<Window x:Class="Lab1Problem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1Problem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RadioButton x:Name="radio_problem1" Content="Problem 1" GroupName="g1" Margin="280,92,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="True" FontSize="14"/>
+        <RadioButton x:Name="radio_problem2" Content="Problem 2" GroupName="g1" Margin="280,141,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="14"/>
+        <RadioButton x:Name="radio_problem3" Content="problem 3" GroupName="g1" Margin="280,182,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="14"/>
+        <Label Content="Please choose  one Problem below:" Margin="0,46,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Button Content="Solution" HorizontalAlignment="Left" Margin="280,217,0,0" VerticalAlignment="Top" Click="Button_Click" FontSize="14" Width="80" Height="30" Background="#FFF3EBEB"/>
+
+    </Grid>
+</Window>
